@@ -1,3 +1,13 @@
-h1{
-    color: blue;
+body{
+    background-image: url("pics/alamofamily.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+img{
+    width: 40%;
+}
+li{
+    color: white;
+    font-family: sans-serif;
 }
