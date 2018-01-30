@@ -1,21 +1,26 @@
 body{
     /*background-image: url("pics/alamofamily.png");*/
     /*background-size: auto 100%;*/
-    background: #860613 no-repeat center center;
-    color: black;
+    background: black no-repeat center center;
+    color: white;
 }
 .calc-inputs {
-    border: 1px solid black;
+    border: 0;
     width: 100%;
     /*padding: .7em;*/
-    font-size: 3em;
+    font-size: 6em;
     text-align: center;
+    background-color: black;
+}
+.onetonine{
+    background-color: #4a424275;
 }
 .no-padding{
     padding: 0px;
 }
 h1{
     font-size: 2.2em;
+    color: #dddddd;
 }
 .row:after{
     margin-bottom: 1em;
@@ -27,6 +32,7 @@ h1{
     font-size: 1.7em;
     /*color: white;*/
     font-weight: bold;
+    border-radius: 50% 0;
 }
 .rectangle:active{
     background-color: rgba(28,28,28,0.21);
