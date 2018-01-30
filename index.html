@@ -16,52 +16,67 @@
 
         <div class="row">
             <div class="col-xs-12">
-                <input class="calc-inputs" value="" type="text" name="display" placeholder="Answer" readonly>
+                <input class="calc-inputs" value="" type="text" name="display" id="display" placeholder="Answer" readonly>
             </div>
         </div>
 
         <div class="row">
             <div class="col-xs-3">
-                <input type="button" class="rectangle onetonine" value="1" onclick="document.calculator.display.value+='1'">
+                <input type="reset" class="rectangle" value="C">
             </div>
             <div class="col-xs-3">
-                <input type="button" class="rectangle onetonine" value="2" onclick="document.calculator.display.value+='2'">
+                <input type="button" class="rectangle" value="+/-">
             </div>
             <div class="col-xs-3">
-                <input type="button" class="rectangle onetonine" value="3" onclick="document.calculator.display.value+='3'">
+                <input type="button" class="rectangle" value="%" onclick="changeOperator('%')">
             </div>
             <div class="col-xs-3">
-                <input type="button" class="rectangle" value="+" onclick="document.calculator.display.value+='+'">
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-xs-3">
-                <input type="button" class="rectangle onetonine" value="4" onclick="document.calculator.display.value+='4'">
-            </div>
-            <div class="col-xs-3">
-                <input type="button" class="rectangle onetonine" value="5" onclick="document.calculator.display.value+='5'">
-            </div>
-            <div class="col-xs-3">
-                <input type="button" class="rectangle onetonine" value="6" onclick="document.calculator.display.value+='6'">
-            </div>
-            <div class="col-xs-3">
-                <input type="button" class="rectangle" value="-" onclick="document.calculator.display.value+='-'">
+                <input type="button" class="rectangle" value="/" onclick="changeOperator('/')">
             </div>
         </div>
 
         <div class="row">
             <div class="col-xs-3">
-                <input type="button" class="rectangle onetonine" value="7" onclick="document.calculator.display.value+='7'">
+                <input type="button" class="rectangle onetonine" value="7" onclick="inputNumber('7')">
             </div>
             <div class="col-xs-3">
-                <input type="button" class="rectangle onetonine" value="8" onclick="document.calculator.display.value+='8'">
+                <input type="button" class="rectangle onetonine" value="8" onclick="inputNumber('8')">
             </div>
             <div class="col-xs-3">
-                <input type="button" class="rectangle onetonine" value="9" onclick="document.calculator.display.value+='9'">
+                <input type="button" class="rectangle onetonine" value="9" onclick="inputNumber('9')">
             </div>
             <div class="col-xs-3">
-                <input type="button" class="rectangle" value="*" onclick="document.calculator.display.value+='*'">
+                <input type="button" class="rectangle" value="*" onclick="changeOperator('*')">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-3">
+                <input type="button" class="rectangle onetonine" value="4" onclick="inputNumber('4')">
+            </div>
+            <div class="col-xs-3">
+                <input type="button" class="rectangle onetonine" value="5" onclick="inputNumber('5')">
+            </div>
+            <div class="col-xs-3">
+                <input type="button" class="rectangle onetonine" value="6" onclick="inputNumber('6')">
+            </div>
+            <div class="col-xs-3">
+                <input type="button" class="rectangle" value="-" onclick="changeOperator('-')">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-3">
+                <input type="button" class="rectangle onetonine" value="1" onclick="inputNumber('1')">
+            </div>
+            <div class="col-xs-3">
+                <input type="button" class="rectangle onetonine" value="2" onclick="inputNumber('2')">
+            </div>
+            <div class="col-xs-3">
+                <input type="button" class="rectangle onetonine" value="3" onclick="inputNumber('3')">
+            </div>
+            <div class="col-xs-3">
+                <input type="button" class="rectangle" value="+" onclick="changeOperator('+')">
             </div>
         </div>
 
@@ -73,10 +88,10 @@
                 <input class="rectangle onetonine" type="button" value="0" onClick="document.calculator.display.value+='0'">
             </div>
             <div class="col-xs-3">
-                <input class="rectangle" type="button" value="=" onClick="document.calculator.display.value=eval(document.calculator.display.value)">
+                <input class="rectangle" type="button" value="=" onclick="doMath()"> <!--onClick="document.calculator.display.value=eval(document.calculator.display.value)">-->
             </div>
             <div class="col-xs-3">
-                <input class="rectangle" type="button" value="/" onClick="document.calculator.display.value+='/'">
+                <input class="rectangle" type="button" value="." onClick="checkForDecimal()">
             </div>
         </div>
 
@@ -106,83 +121,8 @@
 
 </form>
 
-
+<script src="javascript.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>
 
-
-<!--
-<div class="container">
-    <h1 class="text-center">My Personal Calculator</h1>
-    <form name="calculator">
-    <div class="row">
-        <div class="col-xs-12">
-            <input class="calc-inputs" type="text" name = "display" id="display" readonly>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-xs-3">
-            <input type='button' name="one" class="rectangle" value="1" onclick=”calculator.display.value += ‘1’”>
-        </div>
-        <div class="col-xs-3">
-            <button class="rectangle">2</button>
-        </div>
-        <div class="col-xs-3">
-            <button class="rectangle">3</button>
-        </div>
-        <div class="col-xs-3">
-            <button class="rectangle">+</button>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-xs-3">
-            <button class="rectangle">4</button>
-        </div>
-        <div class="col-xs-3">
-            <button class="rectangle">5</button>
-        </div>
-        <div class="col-xs-3">
-            <button class="rectangle">6</button>
-        </div>
-        <div class="col-xs-3">
-            <button class="rectangle">-</button>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-xs-3">
-            <button class="rectangle">7</button>
-        </div>
-        <div class="col-xs-3">
-            <button class="rectangle">8</button>
-        </div>
-        <div class="col-xs-3">
-            <button class="rectangle">9</button>
-        </div>
-        <div class="col-xs-3">
-            <button class="rectangle">*</button>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-xs-3">
-            <button class="rectangle">C</button>
-        </div>
-        <div class="col-xs-3">
-            <button class="rectangle">0</button>
-        </div>
-        <div class="col-xs-3">
-            <button class="rectangle">=</button>
-        </div>
-        <div class="col-xs-3">
-            <button class="rectangle">/</button>
-        </div>
-    </div>
-    </form>
-</div>
-
-
--->
