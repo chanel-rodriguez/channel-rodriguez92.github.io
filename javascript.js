@@ -51,11 +51,17 @@ function changeOperator(value){
 
 function inputNumber(num){
     var totalString = document.getElementById('display').value;
-    if (totalString.length > 5){
+    if(totalString.length > 8){
+
+    }
+    else if (totalString.length > 5){
         document.getElementById("display").style.fontSize = '4em';
         document.calculator.display.value+= num;
     }
     else{
         document.calculator.display.value+= num;
     }
+}
+function resetall(){
+    document.getElementById("display").style.fontSize = '6em';
 }
