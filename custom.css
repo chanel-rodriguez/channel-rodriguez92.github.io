@@ -49,7 +49,6 @@ li{
 #video{
     margin-top: 50px;
     margin-bottom: 80px;
-    max-width: 540px;
 }
 #headline{
     font-weight: bold;
@@ -109,9 +108,7 @@ li{
     height: 1230px;
     display: inline;
 }
-p{
-    max-width: 540px;
-}
+
 .leftpadding10{
     padding-left: 10px;
 }
@@ -133,10 +130,14 @@ p{
     }
     #video{
         margin-top: 20px;
+        max-width: 540px;
     }
     #shorthr{
         margin-top: 20px;
         margin-bottom: 0;
+    }
+    p{
+        max-width: 540px;
     }
 }
 
