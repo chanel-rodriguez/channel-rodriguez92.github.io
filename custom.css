@@ -11,7 +11,7 @@ li{
     width:100%;
 }
 #shorthr{
-    border: .14vw solid black;
+    border: 2px solid black;
     width: 50px;
     margin-top: 17px;
 }
@@ -134,6 +134,7 @@ li{
     #shorthr{
         margin-top: 20px;
         margin-bottom: 0;
+        border: .14vw solid black;
     }
     p{
         max-width: 540px;
