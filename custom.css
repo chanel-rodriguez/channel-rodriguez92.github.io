@@ -3,7 +3,6 @@ body{
 }
 a{
     font-family: 'Montserrat', sans-serif;
-    font-size: 1vw;
 }
 li{
     padding-bottom: 10px;
@@ -138,6 +137,9 @@ li{
     }
     p{
         max-width: 540px;
+        font-size: 1vw;
+    }
+    a{
         font-size: 1vw;
     }
 }
