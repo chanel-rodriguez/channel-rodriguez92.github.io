@@ -3,7 +3,7 @@ body{
 }
 a{
     font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
+    font-size: 1vw;
 }
 li{
     padding-bottom: 10px;
@@ -12,12 +12,12 @@ li{
     width:100%;
 }
 #shorthr{
-    border: 2px solid black;
+    border: .14vw solid black;
     width: 50px;
     margin-top: 17px;
 }
 #shorthrFeatured{
-    border: 2px solid black;
+    border: .14vw solid black;
     width: 2.3vw;
     margin-top: 13px;
     margin-left: 15px;
@@ -138,6 +138,7 @@ li{
     }
     p{
         max-width: 540px;
+        font-size: 1vw;
     }
 }
 
