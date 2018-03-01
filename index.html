@@ -1,203 +1,42 @@
 <!doctype html>
-<html lang="en" class="topmargin">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Chris Conde</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="custom.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
 </head>
 <body>
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12';
-    fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-<div class="container visible-xs">
-
-    <div class="row">
-        <div class="col-xs-12">
-            <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=4174281968/size=small/bgcol=333333/linkcol=ffffff/transparent=true/" seamless><a href="http://chrisconde.bandcamp.com/album/twisted-kite-strings">Twisted Kite Strings by Chris Conde</a></iframe>
-        </div>
-    </div>
-
-    <div class='col-xs-10 col-xs-offset-1 removeleftpadding removerightpadding'>
-        <h1 class="text-center">CHRIS CONDE</h1>
-        <hr id="shorthr">
-    </div>
-
-    <div class="row">
-        <div class="col-xs-8 col-xs-offset-2">
-            <img id="chrispic" src="pics/chris-quality.png" alt="chris">
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-xs-10 col-xs-offset-1 ">
-            <p class="sometopmargin">
-                "As an openly queer musician, Chris Conde combines the classically detached spheres of hip hop, indie rock and avant-garde
-                experimental art punk of the drag variety. In his sometimes hysterical but always poignant bars, Conde strives to relate
-                to his audience through an honest communication of his personal narrative of overcoming drug addiction, internalized
-                homophobia and self-acceptance.
-            </p>
-            <p class="sometopmargin">
-                His unflinchingly genuine persona is distributed evenly across a variety of melodious reincarnations – Diamond Daggerz
-                the drag queen rapper/alter-ego whose obsessed with all things occult, Chris Conde the banjo and guitar-playing folk
-                singer and Chris Conde – leader of numerous alternative-rap subsidiary projects. As a clever lyricist with an eccentric
-                persona, Conde's performances resonate with any audience member who has ever felt jumbled up in a liminal state of
-                ambiguity. He is constantly trying to obtain a sense of solace and understanding, a message of undeniable reliability.
-                Whether rapping in full drag to a produced beat, singing with a fully-backed orchestration or simply crooning alongside
-                a few acoustic instruments, Conde's unabashed dialogue of acceptance sets him apart from the majority in the genres of
-                music he’s connected to."
-            </p>
-            <p class="sometopmargin" id="photocredit">
-                Photo: Jaime Monzon
-            </p>
-        </div>
-    </div>
-    <div class="row" id="video" >
-        <div class="col-xs-10 col-xs-offset-1">
-            <div class="embed-responsive embed-responsive-16by9">
-                <iframe id="lessTall" class="embed-responsive-item" src="https://www.youtube.com/embed/Skzex3AGgJI?rel=0"
-                        height="215" frameborder="0" allowfullscreen></iframe>
+<div id="mainDiv" class="container-fluid">
+    <nav id="myNavBar" class="navbar navbar-default navbar-inverse">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-left" href="#"><img id="brandPic" src="pics/logoroyalprestige.png" alt=""></a>
             </div>
-        </div>
-    </div>
-    <div class="row">
-        <p class="text-center" id="headline"><b>FEATURED</b></p>
-    </div>
-    <hr id="bottomhr">
-    <div class="row">
-        <ul class="list-unstyled text-center">
-            <li>
-                <a href="http://www.paisano-online.com/magazine-articles/coming-coming-chris-conde-talks-hip-hop-sas-lgbtq-music-scene-gay-time/" target="_blank">The Paisano</a>
-            </li>
-            <li>
-                <a href="https://www.sacurrent.com/sa-sound/archives/2016/09/12/watch-chris-conde-rap-about-growing-up-gay" target="_blank">SA Current</a>
-            </li>
-            <li>
-                <a href="http://www.expressnews.com/entertainment/entertainment_columnists/hector_saldana/article/Gay-rapper-went-through-some-expletive-6156408.php" target="_blank">SA Express News</a>
-            </li>
-            <li>
-                <a href="http://tpr.org/post/sa-rapper-turns-page-i-was-going-die-slow-painful-death" target="_blank">Texas Public Radio</a>
-            </li>
-        </ul>
-    </div>
+            <p id="royalP" class="navbar-brand">ROYAL PRESTIGE</p>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
 
-    <div class="row" id="finalmargin">
-        <div class="col-xs-offset-0 col-xs-12">
-            <ul class="list-inline text-center">
-                <li>
-                    <a class="social" href="https://www.facebook.com/chrisconde" target="_blank">
-                        <i class="fa fa-facebook-f" style="font-size:30px;"></i>
-                    </a>
-                </li>
-                <li>
-                    <a class="social" href="https://twitter.com/chrisconde" target="_blank">
-                        <i class="fa fa-twitter" style="font-size:30px;"></i>
-                    </a>
-                </li>
-                <li>
-                    <a class="social" href="https://instagram.com/chriscondetherapper" target="_blank">
-                        <i class="fa fa-instagram" style="font-size:30px;"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div class="row text-center">
-            <a href="mailto:hello@chrisconde.com"><em>For Inquiries hello@chrisconde.com</em></a>
-        </div>
-    </div>
 
-</div>
-
-<div class="container hidden-xs">
-    <div class="row">
-        <div class="col-sm-8 marginbottom">
-            <iframe class="marginbottom" style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=4174281968/size=small/bgcol=333333/linkcol=ffffff/transparent=true/" seamless><a href="http://chrisconde.bandcamp.com/album/twisted-kite-strings">Twisted Kite Strings by Chris Conde</a></iframe>
-
-            <div class="row">
-                <div class="col-sm-3">
-                    <img class="marginbottom" id="chrispic" src="pics/chris-quality.png" alt="chris">
-                    <div class="row">
-                        <p class="paddingright paddingleft" id="headlinelarge"><b>FEATURED</b></p>
-                        <hr id="shorthrFeatured">
-                    </div>
-                    <div class="row">
-                        <ul class="list-unstyled">
-                            <li>
-                                <a href="http://www.paisano-online.com/magazine-articles/coming-coming-chris-conde-talks-hip-hop-sas-lgbtq-music-scene-gay-time/" target="_blank">The Paisano</a>
-                            </li>
-                            <li>
-                                <a href="https://www.sacurrent.com/sa-sound/archives/2016/09/12/watch-chris-conde-rap-about-growing-up-gay" target="_blank">SA Current</a>
-                            </li>
-                            <li>
-                                <a href="http://www.expressnews.com/entertainment/entertainment_columnists/hector_saldana/article/Gay-rapper-went-through-some-expletive-6156408.php" target="_blank">SA Express News</a>
-                            </li>
-                            <li>
-                                <a href="http://tpr.org/post/sa-rapper-turns-page-i-was-going-die-slow-painful-death" target="_blank">Texas Public Radio</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-9">
-                    <h1 id="christitlelarge">CHRIS CONDE</h1>
-                    <hr class="removemarginleft" id="shorthr">
-                    <div class="row">
-                        <p class="sometopmargin paddingleft paddingright">
-                            "As an openly queer musician, Chris Conde combines the classically detached spheres of hip hop, indie rock and avant-garde
-                            experimental art punk of the drag variety. In his sometimes hysterical but always poignant bars, Conde strives to relate
-                            to his audience through an honest communication of his personal narrative of overcoming drug addiction, internalized
-                            homophobia and self-acceptance.
-                        </p>
-                        <p class="sometopmargin paddingleft paddingright">
-                            His unflinchingly genuine persona is distributed evenly across a variety of melodious reincarnations – Diamond Daggerz
-                            the drag queen rapper/alter-ego whose obsessed with all things occult, Chris Conde the banjo and guitar-playing folk
-                            singer and Chris Conde – leader of numerous alternative-rap subsidiary projects. As a clever lyricist with an eccentric
-                            persona, Conde's performances resonate with any audience member who has ever felt jumbled up in a liminal state of
-                            ambiguity. He is constantly trying to obtain a sense of solace and understanding, a message of undeniable reliability.
-                            Whether rapping in full drag to a produced beat, singing with a fully-backed orchestration or simply crooning alongside
-                            a few acoustic instruments, Conde's unabashed dialogue of acceptance sets him apart from the majority in the genres of
-                            music he’s connected to."
-                        </p>
-                        <p class="sometopmargin paddingleft paddingright" id="photocredit">
-                            Photo: Jaime Monzon
-                        </p>
-
-                    </div>
-                    <div class="row paddingleft paddingright" id="video">
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <iframe id="lessTall" class="embed-responsive-item" src="https://www.youtube.com/embed/Skzex3AGgJI?rel=0"
-                                    height="215" frameborder="0" allowfullscreen></iframe>
-                        </div>
-                        <div class="row paddingleft topmargin">
-                            <a href="mailto:hello@chrisconde.com"><em>For Inquiries hello@chrisconde.com</em></a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="col-sm-4">
-            <div class="vl col-sm-1 removeleftpadding">
-
-            </div>
-            <div class="col-sm-11">
-
-                <div class="fb-page" data-href="https://www.facebook.com/chrisconde" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/chrisconde" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/chrisconde">Chris Conde</a></blockquote></div>
-                <p class="marginbottom"></p>
-                <a class="twitter-timeline" data-height="500" href="https://twitter.com/chrisconde?ref_src=twsrc%5Etfw">Tweets by chrisconde</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/Be2CHhfBYAE/" data-instgrm-version="8" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:62.5% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/Be2CHhfBYAE/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">This puppy destroyed me</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A post shared by <a href="https://www.instagram.com/chriscondetherapper/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;" target="_blank"> Chris Conde</a> (@chriscondetherapper) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2018-02-06T05:55:48+00:00">Feb 5, 2018 at 9:55pm PST</time></p></div></blockquote> <script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
-            </div>
-        </div>
+    <div id="displayPics">
+        <img id="currentPic" src="pics/rotatePics/starting.jpg" alt="">
     </div>
 </div>
 
@@ -205,6 +44,10 @@
 
 
 
+
+
+<script   src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="royal.js"></script>
 </body>
 </html>
-

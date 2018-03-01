@@ -1,146 +1,49 @@
 body{
-    font-family: 'Montserrat', sans-serif;
+    background-color: #888;
 }
-a{
-    font-family: 'Montserrat', sans-serif;
+#myNavBar{
+    /*background-color: black;*/
+    /*color: white;*/
 }
-li{
-    padding-bottom: 10px;
+#brandPic{
+    width: 100%;
 }
-#chrispic{
-    width:100%;
-}
-#shorthr{
-    border: .14vw solid black;
-    width: 50px;
-    margin-top: 17px;
-}
-#shorthrFeatured{
-    border: .14vw solid black;
-    width: 2.3vw;
-    margin-top: 13px;
-    margin-left: 15px;
-}
-#shorthrlargepage{
-    border: 2px solid black;
-    width: 50px;
-    margin-top: 17px;
-    margin-left: 0;
-    margin-right: 0;
-}
-.sometopmargin{
-    margin-top: 20px;
-    font-size: 17px;
-    line-height: 1.8em;
+#mainDiv{
+    margin-top: 15px;
 }
 
-#marginleft{
-    margin-left: 20px;
-}
-#finalmargin{
-    /*margin-top: 50px;*/
-    /*margin-bottom: 50px;*/
-    margin: 50px auto;
-}
-.topmargin{
-    margin-top: 20px;
-}
-#video{
-    margin-top: 50px;
-    margin-bottom: 80px;
-}
-#headline{
-    font-weight: bold;
-    font-size: 20px;
-}
-#headlinelarge{
-    font-weight: bold;
-    font-size: 1.12vw;
-}
-#bottomhr{
-    margin-top: 5px;
-    border: 2px solid black;
-    width: 50px;
-}
-.social [class*="fa fa-"] {
-    background-color: #333;
-    border-radius: 30px;
-    color: #fff;
-    display: inline-block;
-    height: 50px;
-    line-height: 50px;
-    margin: auto 3px;
-    width: 50px;
+.navbar-brand {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
     text-align: center;
+    margin: auto;
+    /*color: white;*/
 }
-#photocredit{
-    color: #e4e5e8;
-}
-.marginbottom{
-    margin-bottom: 20px;
-}
-#christitle{
-    margin-top: 0;
-}
-#christitlelarge{
-    font-weight: bold;
-    margin-top: 0;
-    font-size: 30px;
-}
-.removemarginleft{
-    margin-left: 0;
-}
-.removeleftpadding{
-    padding-left: 0;
-}
-.removerightpadding{
-    padding-right: 0;
-}
-.paddingleft{
-    padding-left: 15px;
-}
-.paddingright{
-    padding-right: 15px;
-}
-.vl{
-    border-left: 2px solid #e4e5e8;
-    height: 1530px;
-    display: inline;
+#royalP{
+    color: white;
 }
 
-.leftpadding10{
-    padding-left: 10px;
+#displayPics{
+    margin: 0 auto;
+    width: 50%;
+    height: 500px;
 }
-.col-sm-3 li{
-    padding-bottom: 5px;
-}
-.col-sm-3 a{
-    font-size: 12px;
-}
-.col-sm-3 ul{
-    margin-left: 15px;
-}
-#facepadding{
-    padding-left: 2vw;
-}
-@media screen and  (min-width: 768px){
-    .sometopmargin{
-        font-size: 12px;
-    }
-    #video{
-        margin-top: 20px;
-        max-width: 540px;
-    }
-    #shorthr{
-        margin-top: 20px;
-        margin-bottom: 0;
-    }
-    p{
-        max-width: 540px;
-        font-size: 1vw;
-    }
-    a{
-        font-size: 1vw;
-    }
+#currentPic{
+    max-height: 100%;
+
 }
 
+@media screen and (max-width:600px) {
+    #brandPic{
+        display: none;
+    }
+    #displayPics{
+        width: 100%;
+    }
+    #currentPic{
+        max-height: none;
+        max-width: 100%;
+    }
+}
