@@ -13,6 +13,10 @@ function displayNextImage() {
     x = (x === picHolder.length - 1) ? 0 : x + 1;
     document.getElementById("currentPic").src = address + picHolder[x];
 }
+function displayPreviousImage() {
+    x = (x <= 0) ? picHolder.length - 1 : x - 1;
+    document.getElementById("currentPic").src = picHolder[x];
+}
 
 function startTimer() {
     setInterval(displayNextImage, 4000);
@@ -20,4 +24,5 @@ function startTimer() {
 
 $(document).ready(function(){
     startTimer();
+
 });
